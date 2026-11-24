@@ -8,6 +8,7 @@ Firebase를 이용해 사용자 인증과 실시간 메시지 교환 기능을 �
 
 - Firebase Authentication을 이용한 회원 인증
 - Cloud Firestore를 이용한 실시간 1:1 채팅
+- 이메일 기반 친구 추가 및 친구 목록 실시간 구독
 - 이미지 전송 (Cloudinary)
 
 ## 기술 스택
