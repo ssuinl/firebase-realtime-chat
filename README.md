@@ -1,26 +1,27 @@
 # Firebase 실시간 1:1 채팅
 
-2026.08 · 개인 개발 프로젝트
+2026.08 | 개인 프로젝트
 
-## 목적
-Firebase를 이용해 사용자 인증과 실시간 메시지 교환을 지원하는 웹 채팅 서비스를 구현하는 프로젝트입니다.
+Firebase를 이용해 사용자 인증과 실시간 메시지 교환 기능을 구현한 웹 채팅 프로젝트입니다.
 
-## 주요 기능 (당시 작업 기록 기준)
-- 사용자 인증
-- 실시간 1:1 메시지 교환
-- 이미지 전송
-- 읽음 처리 및 답장
-- 모바일 화면 대응
+## 주요 기능
+
+- Firebase Authentication을 이용한 회원 인증
+- Cloud Firestore를 이용한 실시간 1:1 채팅
+- 이미지 전송 (Cloudinary)
 
 ## 기술 스택
-Firebase Authentication, Cloud Firestore, Firebase Storage, JavaScript, Firebase Hosting
 
-## 배포 기록
-당시 배포 주소: https://suin-d2191.web.app
+JavaScript, Firebase Authentication, Cloud Firestore, Cloudinary, Firebase Hosting
 
-현재 서비스 작동 여부와 접근 권한은 별도 검증이 필요합니다.
+## 저장소 구성
 
-## 저장소 범위
-이 README는 과거 개발 기록을 바탕으로 작성한 프로젝트 소개입니다. 원본 JavaScript, 보안 규칙, 배포 설정 및 화면 자료는 아직 복구되지 않아 포함하지 않았습니다. 따라서 이 저장소만으로 서비스를 재실행할 수 없습니다.
+`recovered/app.js`에는 당시 작성한 JavaScript 소스를 복구해 정리했습니다. Cloudinary 설정값은 공개용으로 대체했습니다.
 
-원본 확보 후 인증 및 접근 제어 규칙, 개인정보 노출, 이미지 업로드 제한 등을 확인할 예정입니다. 실제 사용자 메시지와 사진은 업로드하지 않습니다.
+HTML, CSS, Firebase 설정 파일, 접근 제어 규칙 및 배포 설정은 아직 복구하지 못했습니다. 따라서 현재 파일만으로 서비스를 실행할 수 없습니다. 당시 작업 기록에 있는 읽음 처리, 답장 및 모바일 화면 대응은 전체 원본 복구 후 다시 확인할 필요가 있습니다.
+
+## 배포 및 보안
+
+당시 Firebase Hosting에 배포했습니다. 현재 서비스의 작동 상태와 접근 권한은 확인하지 않았습니다.
+
+실제 사용자 메시지나 사진은 저장소에 포함하지 않습니다. 외부 공개 전 인증 및 데이터 접근 규칙, 이미지 업로드 설정을 추가로 점검해야 합니다.
